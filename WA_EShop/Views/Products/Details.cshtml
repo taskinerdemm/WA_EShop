@@ -1,0 +1,76 @@
+﻿@model WA_EShop.Models.DB.Products
+
+@{
+    ViewData["Title"] = "Ürün Detayları | Admin Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="container float right">
+    <h4>Ürün Detayları</h4>
+</div>
+<hr />
+
+<div class="container col-md-5">
+    <dl class="row">
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Preview)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Preview)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Features)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.Features)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.CategoryId)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.CategoryId)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.ProductNumber)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.ProductNumber)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.UnitPrice)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.UnitPrice)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.UnitsInStock)
+        </dt>
+        <dd class = "col-sm-8">
+            @Html.DisplayFor(model => model.UnitsInStock)
+        </dd>
+        <dt class = "col-sm-4">
+            @Html.DisplayNameFor(model => model.Picture)
+        </dt>
+        <dd class = "col-sm-8">
+            <img src="~/Images/@Html.DisplayFor(Model => Model.Picture)" class="img-fluid rounded">
+        </dd>
+    </dl>
+    <div>
+        <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model?.ProductId">Güncelle</a>
+        <a asp-action="Index" class="btn btn-primary">  <i class="fa-solid fa-backward"></i>  Ürünler</a>
+    </div>
+</div>
+

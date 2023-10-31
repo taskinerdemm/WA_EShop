@@ -1,0 +1,31 @@
+﻿@model WA_EShop.Models.Pager;
+
+<div class="container pager">
+    @if (Model.TotalPages > 0)
+    {
+        <ul class="pagination justify-content-center">
+
+            @if (Model.CurretPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-pg="@(Model.CurretPage - 1)">Önceki Sayfa</a>
+                </li>
+            }
+
+            @for (var pge = Model.StartPage; pge <= Model.EndPage; pge++)
+            {
+                <li class="page-item @(pge == Model.CurretPage ? "active" : "")">
+                    <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-pg="@pge">@pge</a>
+                </li>
+
+            }
+            @if (Model.CurretPage < Model.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-controller="Product" asp-action="Index" asp-route-pg="@(Model.CurretPage + 1)">Sonraki Sayfa</a>
+                </li>
+            }
+        </ul>
+    }
+
+</div>

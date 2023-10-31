@@ -1,0 +1,46 @@
+﻿@model WA_EShop.Models.User
+
+@{
+    ViewData["Title"] = "Kulllanıcı Detayları | Admin Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="container float right">
+    <h4>Kullanıcı Detayları</h4>
+</div>
+<hr />
+
+<div class="container col-md-5">
+    <dl class="row">
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.FirstName)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.FirstName)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.LastName)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.LastName)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Mobile)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Mobile)
+        </dd>
+        <dt class="col-sm-4">
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd class="col-sm-8">
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+    </dl>
+
+    <div>
+        <a asp-action="Edit" class="btn btn-success sm" asp-route-id="@Model?.Id">Güncelle</a>
+        <a asp-action="Index" class="btn btn-primary sm">  <i class="fa-solid fa-backward"></i>  Kullanıcılar</a></a>
+    </div>
+</div>

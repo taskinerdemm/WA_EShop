@@ -1,0 +1,35 @@
+﻿@model WA_EShop.Models.DB.Categories
+
+@{
+    ViewData["Title"] = "Kategori Detayları | Admin Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="container float right">
+    <h4>Kategori Detayları</h4>
+</div>
+<hr />
+
+<div class="container col-md-5">
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CategoryName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CategoryName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Description)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Description)
+        </dd>
+    </dl>
+    <div>
+        <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model?.CategoryId">Güncelle</a>
+        <a asp-action="Index" class="btn btn-primary"> <i class="fa-solid fa-backward"></i> Kategoriler </a>
+    </div>
+</div>
+

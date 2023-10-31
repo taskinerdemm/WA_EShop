@@ -1,0 +1,66 @@
+﻿@model IEnumerable<WA_EShop.Models.DB.Products>
+
+@{
+    ViewData["Title"] = "Ürün Listesi | Admin Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="container float right">
+    <h4>Ürün Listesi</h4>
+    <p>
+        <a href="/Prodct/addproduct"
+        <button class="btn btn-primary sm">Yeni Ürün Ekle</button></a>
+        @* <a asp-action="Create" class="btn btn-primary sm">Yeni Ürün Ekle</a> *@
+    </p>
+</div>
+<hr />
+<div class="container">
+    <table class="table table-bordered table-striped">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.ProductName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CategoryId)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UnitPrice)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.UnitsInStock)
+                </th>
+                <th style="width:23%;"></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ProductName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CategoryId)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnitPrice)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.UnitsInStock)
+                    </td>
+                    <td>
+                        <img src="../images/@Html.DisplayFor(modelItem => item.Picture)"style="width:100px; height:100px;"/>
+                    </td>
+
+                    <td>
+                        <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.ProductId">Güncelle</a>
+                        <a asp-action="Details" class="btn btn-warning" asp-route-id="@item.ProductId">Detaylar</a>
+                        <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.ProductId">Sil</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

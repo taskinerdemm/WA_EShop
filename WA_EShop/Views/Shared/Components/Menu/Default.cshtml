@@ -1,0 +1,40 @@
+﻿@model List<Categories>
+@{
+    var selectedCategory = Url.ActionContext.RouteData.Values["id"];
+}
+
+<ul class="list-group">
+    <a href="/Product" class="list-group-item">
+        <i class="fa-thin fa-chevrons-right fa-fw" aria-hidden="true"></i>
+        Tüm Kategoriler
+    </a>
+
+    @foreach (Categories item in Model)
+    {
+        if (selectedCategory != null)
+        {
+            if (item.CategoryId == int.Parse(selectedCategory.ToString()))
+            {
+                <a href="/ProductList/Category/@item.CategoryId" class="list-group-item active">
+                    <i class="fa-thin fa-chevrons-right fa-fw"></i>
+                    @item.CategoryName
+                </a>
+            }
+            else
+            {
+                <a href="/ProductList/Category/@item.CategoryId" class="list-group-item">
+                    <i class="fa-thin fa-chevrons-right fa-fw" aria-hidden="true"></i>
+                    @item.CategoryName
+                </a>
+            }
+        }
+        else
+        {
+
+            <a href="/ProductList/Category/@item.CategoryId" class="list-group-item">
+                <i class="fa-thin fa-chevrons-right fa-fw" aria-hidden="true"></i>
+                @item.CategoryName
+            </a>
+        }
+    }
+</ul>

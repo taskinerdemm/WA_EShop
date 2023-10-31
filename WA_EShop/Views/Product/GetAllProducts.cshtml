@@ -1,0 +1,61 @@
+﻿@model List<Products>
+
+@{
+    ViewData["Title"] = "GetAllProducts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container pb-5">
+
+
+        <div class="col-md-9">
+            <div class="row">
+                <div class="container">
+                    @if (Model.Count() == 0)
+                    {
+                        <div class="alert alert-danger" role="alert">
+                            <i class="fa fa-exclamation-circle" aria-hidden="true"></i>
+                            Aradığınız ürün bulunamadı. <i class="fa-regular fa-face-worried"></i>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="alert alert-warning" role="alert">
+                            <i class="fa-regular fa-circle-check" aria-hidden="true"></i>
+                            @Model.Count() adet ürün bulundu.
+                        </div>
+                    }
+                </div>
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model)
+        {
+            <div class="col-md-4 mb-5">
+                <div class="card">
+                    <img class="card-img-top" src="../Images/@Html.DisplayFor(Model => item.Picture)" style="width:243px; height:263px;" alt="@item.ProductName">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            <a href="/Product/Details/@item.ProductId">
+                                @item.ProductName
+                            </a>
+                        </h5>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted product-price">
+                            @item.UnitPrice.Value.ToString("C")
+                        </small>
+                        <a href="/Product/Details/@item.ProductId" class="btn btn-outline-warning btn-sm float-right">
+                            <i class="fa-solid fa-angles-right"></i>
+                            Ürünü İncele
+                        </a>
+                    </div>
+                </div>
+            </div>
+            }
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+            @* <p>@item.ProductName</p> *@        

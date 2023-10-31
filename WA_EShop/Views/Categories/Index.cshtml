@@ -1,0 +1,49 @@
+﻿@model IEnumerable<WA_EShop.Models.DB.Categories>
+
+@{
+    ViewData["Title"] = "Kategori Listesi | Admin Paneli";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<br />
+<div class="container float right">
+    <h4>Kategori Listesi</h4>
+    <p>
+        <a asp-action="Create" class="btn btn-primary sm">Yeni Kategori Ekle</a>
+    </p>
+</div>
+<hr />
+
+
+<div class="container">
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CategoryName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Description)
+            </th>
+            <th style="width:23%;"></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CategoryName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Description)
+            </td>
+            <td>
+                <a asp-action="Edit" class="btn btn-primary" asp-route-id="@item.CategoryId">Güncelle</a>
+                <a asp-action="Details" class="btn btn-warning" asp-route-id="@item.CategoryId">Detaylar</a>
+                <a asp-action="Delete" class="btn btn-danger" asp-route-id="@item.CategoryId">Sil</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+</div>
