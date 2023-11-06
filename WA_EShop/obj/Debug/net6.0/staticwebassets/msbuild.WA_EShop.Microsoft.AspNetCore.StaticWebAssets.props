@@ -48,6 +48,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\06830a86-dfe7-42fe-bdb6-d9de4fdf86b1_iphone-13-finish-select-202207-blue.jpeg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\084577c1-82e1-4ae5-bb12-8e4b14afdf76_iphone-14-finish-select-202209-6-1inch-purple.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>WA_EShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WA_EShop</BasePath>
+      <RelativePath>Images/084577c1-82e1-4ae5-bb12-8e4b14afdf76_iphone-14-finish-select-202209-6-1inch-purple.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\084577c1-82e1-4ae5-bb12-8e4b14afdf76_iphone-14-finish-select-202209-6-1inch-purple.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\08d00532-6e2a-4266-ac30-90acc63b8a23_iphone11.jpeg))">
       <SourceType>Package</SourceType>
       <SourceId>WA_EShop</SourceId>
@@ -127,6 +143,22 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\574dd911-d6ab-40d4-ba53-4d74f3095731_MV7N2.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\5f39f3a3-ed09-462f-9865-13bd698a1535_20277112_r1_1000_1000.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>WA_EShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WA_EShop</BasePath>
+      <RelativePath>Images/5f39f3a3-ed09-462f-9865-13bd698a1535_20277112_r1_1000_1000.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\5f39f3a3-ed09-462f-9865-13bd698a1535_20277112_r1_1000_1000.jpg))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\6bc899f0-7d7e-4362-a6b6-b4de8d723507_1_org_zoom.jpg))">
       <SourceType>Package</SourceType>
@@ -240,6 +272,38 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\9f92c064-61cc-420c-9189-f46908ed4426_1_org_zoom.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\9fef7434-80ad-4b37-a257-04fae9a71c78_iphone-15-pro-finish-select-202309-6-1inch-bluetitanium.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>WA_EShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WA_EShop</BasePath>
+      <RelativePath>Images/9fef7434-80ad-4b37-a257-04fae9a71c78_iphone-15-pro-finish-select-202309-6-1inch-bluetitanium.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\9fef7434-80ad-4b37-a257-04fae9a71c78_iphone-15-pro-finish-select-202309-6-1inch-bluetitanium.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\a8617a83-03cc-4cd8-903e-535aab84915a_110000496105029.jpg))">
+      <SourceType>Package</SourceType>
+      <SourceId>WA_EShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WA_EShop</BasePath>
+      <RelativePath>Images/a8617a83-03cc-4cd8-903e-535aab84915a_110000496105029.jpg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\a8617a83-03cc-4cd8-903e-535aab84915a_110000496105029.jpg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\d0f72d99-c208-436a-a1e3-442657dfa66a_lenovo-laptop-ideapad-3-gen-6-15-amd-subseries-gallery-9.webp))">
       <SourceType>Package</SourceType>
       <SourceId>WA_EShop</SourceId>
@@ -303,6 +367,38 @@
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\ea47156b-b694-4331-99a1-85534408bbd7_MV7N2.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\faab3b18-dab9-47e8-95fb-a9303af2dac1_indir.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>WA_EShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WA_EShop</BasePath>
+      <RelativePath>Images/faab3b18-dab9-47e8-95fb-a9303af2dac1_indir.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\faab3b18-dab9-47e8-95fb-a9303af2dac1_indir.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\fd55e331-dac2-48b0-a168-d1f4304725a8_ender-3-v2-neo-3d-yazici-42580-11-O.png))">
+      <SourceType>Package</SourceType>
+      <SourceId>WA_EShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WA_EShop</BasePath>
+      <RelativePath>Images/fd55e331-dac2-48b0-a168-d1f4304725a8_ender-3-v2-neo-3d-yazici-42580-11-O.png</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\fd55e331-dac2-48b0-a168-d1f4304725a8_ender-3-v2-neo-3d-yazici-42580-11-O.png))</OriginalItemSpec>
     </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\img\admin_background.jpg))">
       <SourceType>Package</SourceType>
