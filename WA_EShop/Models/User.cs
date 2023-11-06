@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 
 namespace WA_EShop.Models
 {
@@ -10,6 +11,7 @@ namespace WA_EShop.Models
         [DisplayName("Soyisim")]
         public string LastName { get; set; }
         [DisplayName("Cep Numarası")]
+        [MaxLength(11)]
         public string Mobile { get; set; }
         [DisplayName("Mail Adresi")]
         public string Email { get; set; }

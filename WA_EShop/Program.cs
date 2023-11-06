@@ -9,6 +9,8 @@ builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
+app.UseSession();
+
 if (!app.Environment.IsDevelopment())
 {
     app.UseExceptionHandler("Home/Error");
@@ -17,9 +19,10 @@ if (!app.Environment.IsDevelopment())
 app.UseStaticFiles();
 
 app.UseRouting();
-app.UseAuthentication(); ;
 
+app.UseAuthentication();
 app.UseAuthorization();
+
 
 app.MapControllerRoute(
     name: "default",
