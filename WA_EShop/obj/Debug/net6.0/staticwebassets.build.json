@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ysLijMjy2dQ3RQtHFgmABPcB+7YMc80wHxTCJzyJkaY=",
+  "Hash": "vgn9/MV1DIozGXYG93k/BtMXzA/TSnmddfqZ5ocf9mk=",
   "Source": "WA_EShop",
   "BasePath": "_content/WA_EShop",
   "Mode": "Default",
@@ -1188,6 +1188,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\6bc899f0-7d7e-4362-a6b6-b4de8d723507_1_org_zoom.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\10\\Desktop\\Eshopping\\Eshopping\\WA_EShop\\WA_EShop\\wwwroot\\Images\\6fcfa4bd-7976-44ce-97f5-e444c3f19b92_airpods3.jpeg",
+      "SourceId": "WA_EShop",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\10\\Desktop\\Eshopping\\Eshopping\\WA_EShop\\WA_EShop\\wwwroot\\",
+      "BasePath": "_content/WA_EShop",
+      "RelativePath": "Images/6fcfa4bd-7976-44ce-97f5-e444c3f19b92_airpods3.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\6fcfa4bd-7976-44ce-97f5-e444c3f19b92_airpods3.jpeg"
     },
     {
       "Identity": "C:\\Users\\10\\Desktop\\Eshopping\\Eshopping\\WA_EShop\\WA_EShop\\wwwroot\\Images\\79db37ac-df84-428b-a281-923ab6bcb6b1_bluetooth-kulaklik-kanser-1578300720.jpg",

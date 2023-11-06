@@ -144,6 +144,22 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\6bc899f0-7d7e-4362-a6b6-b4de8d723507_1_org_zoom.jpg))</OriginalItemSpec>
     </StaticWebAsset>
+    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\6fcfa4bd-7976-44ce-97f5-e444c3f19b92_airpods3.jpeg))">
+      <SourceType>Package</SourceType>
+      <SourceId>WA_EShop</SourceId>
+      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
+      <BasePath>_content/WA_EShop</BasePath>
+      <RelativePath>Images/6fcfa4bd-7976-44ce-97f5-e444c3f19b92_airpods3.jpeg</RelativePath>
+      <AssetKind>All</AssetKind>
+      <AssetMode>All</AssetMode>
+      <AssetRole>Primary</AssetRole>
+      <RelatedAsset></RelatedAsset>
+      <AssetTraitName></AssetTraitName>
+      <AssetTraitValue></AssetTraitValue>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <OriginalItemSpec>$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\6fcfa4bd-7976-44ce-97f5-e444c3f19b92_airpods3.jpeg))</OriginalItemSpec>
+    </StaticWebAsset>
     <StaticWebAsset Include="$([System.IO.Path]::GetFullPath($(MSBuildThisFileDirectory)..\staticwebassets\Images\79db37ac-df84-428b-a281-923ab6bcb6b1_bluetooth-kulaklik-kanser-1578300720.jpg))">
       <SourceType>Package</SourceType>
       <SourceId>WA_EShop</SourceId>
